@@ -1,0 +1,16 @@
+package com.ccm.configmaster.configmaster.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MyController {
+
+	
+	@GetMapping("/get/{name}")
+	public String getName(String name){
+		return "Hello "+ name;
+	}
+	
+	
+}
